@@ -39,9 +39,9 @@ export default function Navbar() {
       >
         <img src={mainLogo} style={{ ...navbarStyles }} alt="" />
         <ul id="nav-links" data-visible={`${visible}`}>
-          <a href="/virtue-sod/#about-contain">about us</a>
+          <a href="/#about-contain">about us</a>
           <a href="/#services-contain">services</a>
-          {/* <Link to="/#services-contain">Services</Link> */}
+          <Link to="/#services-contain">Services</Link>
           <Link to="types"> Types</Link>
           <Link to="maintenance"> Maintenance & Care</Link>
           <Link to="estimates">Contact</Link>
