@@ -13,7 +13,7 @@ export default function Navbar() {
   }, [location.pathname]);
 
   const navStyles = function () {
-    if (currentRoute !== "/") {
+    if (currentRoute !== "/virtue-sod/") {
       return {
         margin: "1.5rem",
         width: "120px",
@@ -39,12 +39,12 @@ export default function Navbar() {
       >
         <img src={mainLogo} style={{ ...navbarStyles }} alt="" />
         <ul id="nav-links" data-visible={`${visible}`}>
-          <a href="/#about-contain">about us</a>
+          <a href="/virtue-sod/#about-contain">about us</a>
           <a href="/virtue-sod/#services-contain">services</a>
-          <Link to="/#services-contain">Services</Link>
-          <Link to="types"> Types</Link>
-          <Link to="maintenance"> Maintenance & Care</Link>
-          <Link to="estimates">Contact</Link>
+          {/* <Link to="/#services-contain">Services</Link> */}
+          <Link to="/virtue-sod/types"> Types</Link>
+          <Link to="/virtue-sod/maintenance"> Maintenance & Care</Link>
+          <Link to="/virtue-sod/estimates">Contact</Link>
         </ul>
         <div className="burger-wrap" aria-expanded={`${visible}`}>
           <button
