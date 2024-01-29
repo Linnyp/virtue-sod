@@ -32,7 +32,7 @@ export default function Navbar() {
       <div
         id="navbar"
         style={
-          currentRoute !== "/"
+          currentRoute !== "/virtue-sod/"
             ? { position: "static", flexDirection: "row" }
             : {}
         }
@@ -42,9 +42,9 @@ export default function Navbar() {
           <a href="/virtue-sod/#about-contain">about us</a>
           <a href="/virtue-sod/#services-contain">services</a>
           {/* <Link to="/#services-contain">Services</Link> */}
-          <Link to="/virtue-sod/types"> Types</Link>
-          <Link to="/virtue-sod/maintenance"> Maintenance & Care</Link>
-          <Link to="/virtue-sod/estimates">Contact</Link>
+          <Link to="/types"> Types</Link>
+          <Link to="/maintenance"> Maintenance & Care</Link>
+          <Link to="/estimates">Contact</Link>
         </ul>
         <div className="burger-wrap" aria-expanded={`${visible}`}>
           <button
