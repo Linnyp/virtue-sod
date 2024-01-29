@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="home-contain">
       <div style={{ background: "#3d4a3d" }}>
-        <video autoPlay muted loop src={video} id="video"></video>
+        <video autoPlay muted loop playsInline src={video} id="video"></video>
       </div>
       {/* <div id="hero-contain"></div> */}
       <About />
