@@ -46,13 +46,16 @@ export default function Navbar() {
           <Link to="/maintenance"> Maintenance & Care</Link>
           <Link to="/estimates">Contact</Link>
         </ul>
-        <div className="burger-wrap" aria-expanded={`${visible}`}>
-          <button
-            className="burger"
-            aria-expanded={`${visible}`}
-            onClick={visibleToggle}
-          ></button>
-        </div>
+
+        {/* Burger menu wrapper */}
+        {/* <div className="burger-wrap" aria-expanded={`${visible}`}>
+        </div> */}
+
+        <button
+          className="burger"
+          aria-expanded={`${visible}`}
+          onClick={visibleToggle}
+        ></button>
       </div>
       {/* <div className="wave-bottom"></div> */}
     </>

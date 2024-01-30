@@ -377,27 +377,24 @@ body {
 
 @media (max-width: 600px) {
   .burger {
-    /* position: absolute;
+    position: absolute;
     z-index: 1111;
     top: 1rem;
     right: 1rem;
-    margin: 1.5rem;
-    border: none;
-    height: 10vw;
-    width: 10vw;
-    background-color: rgba(252, 252, 252, 0); */
+    height: 100px;
+    width: 100px;
+    background-color: rgba(252, 252, 252, 0);
+    /* ^ Positioning and size without wrapper ^ */
     background-color: transparent;
     border: none;
-    height: 10vw;
-    width: 10vw;
-    background-image: url("../src//assets//icons8-menu-488.png");
+    background-image: url("../src//assets//icons8-menu-red.png");
     background-size: cover;
     display: block;
   }
 
   .burger[aria-expanded="true"] {
     position: fixed;
-    background-image: url("../src/assets/icons8-close-48\(1\).png");
+    background-image: url("../src/assets/icons8-close-window-red.png");
   }
 
   .burger-wrap {
