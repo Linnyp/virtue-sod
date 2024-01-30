@@ -15,7 +15,7 @@ export default function Navbar() {
   const navStyles = function () {
     if (currentRoute !== "/virtue-sod/") {
       return {
-        margin: "1.5rem",
+        margin: "1rem",
         width: "120px",
       };
     }
@@ -38,7 +38,7 @@ export default function Navbar() {
         }
       >
         <img src={mainLogo} style={{ ...navbarStyles }} alt="" />
-        <ul id="nav-links" data-visible={`${visible}`}>
+        <ul id="nav-links" data-visible={`${visible}`} onClick={visibleToggle}>
           <a href="/virtue-sod/#about-contain">about us</a>
           <a href="/virtue-sod/#services-contain">services</a>
           {/* <Link to="/#services-contain">Services</Link> */}
