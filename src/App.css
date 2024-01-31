@@ -353,6 +353,14 @@ body {
   );
 }
 
+@media (max-height: 580px) {
+  #navbar img {
+    max-width: 350px;
+    width: 20%;
+    margin-top: min(50%, 5rem);
+  }
+}
+
 @media (max-width: 1100px) {
   .service-img-contain {
     flex-direction: column;
