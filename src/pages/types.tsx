@@ -3,9 +3,13 @@ function Types() {
     <div id="types-contain">
       <h1
         className="about-head"
-        style={{ fontSize: "3rem", color: "#3d4a3d", marginBottom: "4rem" }}
+        style={{
+          fontSize: "3rem",
+          color: "#3d4a3d",
+          marginBottom: "7rem",
+        }}
       >
-        sod Options
+        Sod Options
       </h1>
       <ul id="accordion">
         <li>

@@ -17,11 +17,11 @@ export default function About() {
           </p>
           <div className="about-contact">
             <img src={phone} alt="" />
-            <span>239-222-2222</span>
+            <span id="contact">239-222-2222</span>
           </div>
           <div className="about-contact">
             <img src={email} alt="" />
-            <span>virtue@gmail.com</span>
+            <span id="contact">virtue@gmail.com</span>
           </div>
         </section>
 
