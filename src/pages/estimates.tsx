@@ -1,5 +1,3 @@
-import img1 from "../assets/images/Leonardo_Diffusion_XL_a_landscape_image_of_a_field_of_with_foc_2.jpg";
-
 export default function Estimates() {
   return (
     <div className="contactpage-container">
