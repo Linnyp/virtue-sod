@@ -31,7 +31,7 @@ body {
   font-size: large;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 1px;
-  padding: 2rem;
+  padding: 2rem 0;
   margin: 0;
   list-style: none;
   display: flex;
@@ -42,7 +42,7 @@ body {
 
 #nav-links a {
   padding: 6px;
-  font-size: medium;
+  font-size: large;
   transform-origin: bottom right;
   transition: transform 0.3s;
   color: white;
@@ -150,7 +150,10 @@ body {
 #services-contain {
   padding-top: 2rem;
   color: #3d4a3d;
-  background-color: #a1afa0;
+  /* background-color: #a1afa0; */
+  background-image: url(/src/assets/images/Leonardo_Diffusion_XL_a_landscape_image_of_a_field_of_with_foc_2.jpg);
+  background-size: cover;
+  background-position: bottom;
 }
 
 #services-contain h1 {
@@ -178,6 +181,10 @@ body {
   height: auto;
   max-width: 400px;
   text-align: center;
+  background: #ffffff8c;
+  padding: 2%;
+  border: solid 1px;
+  border-radius: 10%;
 }
 
 .service-img-contain section > p {
@@ -361,6 +368,33 @@ body {
   );
 }
 
+.contactpage-container {
+  padding-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #a1afa0;
+}
+
+.contactleft-title h2 {
+  font-weight: 600;
+  color: #c1292e;
+}
+
+.contactpage-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contactpage-right {
+  height: 64vh;
+  width: 50%;
+  background-image: url("../src/assets/images/Leonardo_Diffusion_XL_a_landscape_image_of_a_field_of_with_foc_2.jpg");
+  background-position: bottom;
+}
+
 @media (max-height: 580px) {
   #navbar img {
     max-width: 350px;
@@ -467,7 +501,6 @@ body {
     width: 100%;
     transform: translateX(0%);
     opacity: 1;
-    padding-bottom: 50%;
   }
 
   #nav-links a {
@@ -479,7 +512,7 @@ body {
   }
 
   #about-contain section {
-    margin-bottom: 35%;
+    margin-bottom: 15%;
   }
 
   #about-contain p {
@@ -488,6 +521,10 @@ body {
 
   #about-contain section:nth-child(1) {
     border-right: none;
+  }
+
+  #types-contain {
+    margin-top: 4rem;
   }
 
   #pros-cons {
@@ -500,8 +537,8 @@ body {
 
   .service-img-contain section {
     max-width: none;
-    background-color: rgba(255, 255, 255, 0.171);
-    padding: 2rem 0;
+    background: #ffffff8c;
+    padding: 2%;
     margin-bottom: 2vh;
   }
 }

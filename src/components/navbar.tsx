@@ -17,6 +17,7 @@ export default function Navbar() {
       return {
         margin: "1rem",
         width: "120px",
+        left: "0",
       };
     }
   };
@@ -35,18 +36,12 @@ export default function Navbar() {
           currentRoute !== "/virtue-sod/"
             ? {
                 position: "static",
-                flexDirection: "column-reverse",
-                marginTop: "4.5rem",
+                flexDirection: "row-reverse",
               }
             : {}
         }
       >
-        <ul
-          id="nav-links"
-          data-visible={`${visible}`}
-          onClick={visibleToggle}
-          style={currentRoute !== "/virtue-sod/" ? { padding: "0" } : {}}
-        >
+        <ul id="nav-links" data-visible={`${visible}`} onClick={visibleToggle}>
           <a href="/virtue-sod/#about-contain">about us</a>
           <a href="/virtue-sod/#services-contain">services</a>
           {/* <Link to="/#services-contain">Services</Link> */}
@@ -55,10 +50,6 @@ export default function Navbar() {
           <Link to="/estimates">Contact</Link>
         </ul>
         <img src={mainLogo} style={{ ...navbarStyles }} alt="" />
-
-        {/* Burger menu wrapper */}
-        {/* <div className="burger-wrap" aria-expanded={`${visible}`}>
-        </div> */}
 
         <button
           className="burger"
