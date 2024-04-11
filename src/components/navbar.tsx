@@ -46,7 +46,7 @@ export default function Navbar() {
           <a href="/virtue-sod/#services-contain">services</a>
           {/* <Link to="/#services-contain">Services</Link> */}
           <Link to="/types"> Types</Link>
-          <Link to="/maintenance"> Maintenance & Care</Link>
+          {/* <Link to="/maintenance"> Maintenance & Care</Link> */}
           <Link to="/estimates">Contact</Link>
         </ul>
         <img src={mainLogo} style={{ ...navbarStyles }} alt="" />

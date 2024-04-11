@@ -8,7 +8,7 @@ import Maintenance from "./pages/maintenance";
 import Navbar from "./components/navbar";
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-emerald-700">
       <Router>
         <Navbar />
         <Routes>
@@ -16,7 +16,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/estimates" element={<Estimates />} />
           <Route path="/types" element={<Types />} />
-          <Route path="/maintenance" element={<Maintenance />} />
+          {/* <Route path="/maintenance" element={<Maintenance />} /> */}
         </Routes>
       </Router>
     </div>

@@ -1,5 +1,6 @@
-import About from "./about";
 import video from "../assets/virtueXsmall.mp4";
+import { Aboutsection } from "@/components/component/aboutsection";
+import { Servicespage } from "@/components/component/servicespage";
 
 export default function Home() {
   return (
@@ -7,8 +8,8 @@ export default function Home() {
       <div style={{ background: "#3d4a3d" }}>
         <video autoPlay muted loop playsInline src={video} id="video"></video>
       </div>
-      {/* <div id="hero-contain"></div> */}
-      <About />
+      <Aboutsection />
+      <Servicespage />
     </main>
   );
 }

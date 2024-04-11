@@ -1,0 +1,5 @@
+xxx 1. make navbar logo scale more appropriately in desktop view.
+2. remove cons from accordion list.
+3. contact page
+4. maintenace page
+xxx 5. adjust font size/positioning for mobile nav-links.

@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Cedarville+Cursive&family=Kanit:ital,wght@1,300&family=Lobster&family=Luckiest+Guy&family=Permanent+Marker&family=Poppins:ital,wght@0,200;0,400;1,200&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100%;
+}
 body {
   margin: 0;
+  height: 100%;
   font-family: "Poppins", sans-serif;
-  background-color: #3d4a3d;
+  background: #32936f;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 #navbar img {
@@ -27,23 +39,22 @@ body {
 }
 
 #nav-links {
-  margin-top: 3rem;
   font-size: large;
+  gap: 2rem;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 1px;
   padding: 2rem 0;
   margin: 0;
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
   width: 90vw;
 }
 
 #nav-links a {
   padding: 6px;
   font-size: large;
-  transform-origin: bottom right;
+  transform-origin: bottom;
   transition: transform 0.3s;
   color: white;
   text-decoration: none;
@@ -98,11 +109,6 @@ body {
   border-right: dotted;
 }
 
-.about-head {
-  font-family: "Bebas Neue", sans-serif;
-  text-align: center;
-}
-
 #about-contain p {
   font-size: large;
   padding: 0 3rem;
@@ -148,12 +154,13 @@ body {
 }
 
 #services-contain {
-  padding-top: 2rem;
+  /* padding-top: 2rem;
   color: #3d4a3d;
-  /* background-color: #a1afa0; */
+  background-color: #a1afa0;
   background-image: url(/src/assets/images/Leonardo_Diffusion_XL_a_landscape_image_of_a_field_of_with_foc_2.jpg);
   background-size: cover;
   background-position: bottom;
+  padding-bottom: 3rem; */
 }
 
 #services-contain h1 {
@@ -218,7 +225,6 @@ body {
 
 #types-contain {
   padding-top: 3rem;
-  background-color: #a1afa0;
 }
 
 .types-head {
@@ -231,21 +237,22 @@ body {
   padding: 0;
   padding-bottom: 3rem;
   margin: 0 auto;
-  width: 90vw;
+  width: 65vw;
+  min-width: 380px;
 }
 
 #accordion li {
   list-style: none;
   margin-bottom: 10px;
   background-color: #3d4a3d;
-  padding: 10px;
+  padding: 5px;
   border-radius: 12px;
 }
 
 #accordion li label {
   font-family: "Bebas Neue", sans-serif;
   text-shadow: #ca0000 0px 0px 10px;
-  color: #a1afa0;
+  color: white;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -369,20 +376,29 @@ body {
 }
 
 .contactpage-container {
-  padding-top: 150px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: #a1afa0;
+  height: calc(100vh - 8rem);
 }
 
 .contactleft-title h2 {
-  font-weight: 600;
+  font-weight: lighter;
   color: #c1292e;
+}
+
+.contactleft-title hr {
+  border: none;
+  width: 50px;
+  height: 1px;
+  background-color: #c1292e;
+  border-radius: 10px;
 }
 
 .contactpage-left {
   display: flex;
+  margin: auto;
   flex-direction: column;
   align-items: start;
   gap: 20px;
@@ -391,7 +407,8 @@ body {
 .contactpage-right {
   height: 64vh;
   width: 50%;
-  background-image: url("../src/assets/images/Leonardo_Diffusion_XL_a_landscape_image_of_a_field_of_with_foc_2.jpg");
+  background-image: url("../src/assets/images/pastel-lawn2.jpg");
+  background-size: cover;
   background-position: bottom;
 }
 
@@ -425,7 +442,7 @@ body {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   #navbar {
     position: static;
   }
@@ -441,20 +458,20 @@ body {
     z-index: 1111;
     top: 1rem;
     right: 1rem;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     background-color: rgba(252, 252, 252, 0);
     /* ^ Positioning and size without wrapper ^ */
     background-color: transparent;
     border: none;
-    background-image: url("../src//assets//icons8-menu-red.png");
+    background-image: url("../src//assets//burgmenu.png");
     background-size: cover;
     display: block;
   }
 
   .burger[aria-expanded="true"] {
     position: fixed;
-    background-image: url("../src/assets/icons8-close-window-red.png");
+    background-image: url("../src/assets/closemenu.png");
   }
 
   .burger-wrap {
@@ -504,6 +521,7 @@ body {
   }
 
   #nav-links a {
+    font-size: 3rem;
     margin-left: 3rem;
   }
 
@@ -540,6 +558,12 @@ body {
     background: #ffffff8c;
     padding: 2%;
     margin-bottom: 2vh;
+    border-radius: 0;
+  }
+
+  .contactpage-container {
+    margin-top: 4rem;
+    height: calc(100vh - 6rem);
   }
 }
 
