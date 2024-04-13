@@ -33,7 +33,7 @@ export default function Navbar() {
       <div
         id="navbar"
         style={
-          currentRoute !== "/virtue-sod/"
+          currentRoute !== "/"
             ? {
                 position: "static",
                 flexDirection: "row-reverse",
