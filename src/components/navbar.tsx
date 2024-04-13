@@ -42,8 +42,8 @@ export default function Navbar() {
         }
       >
         <ul id="nav-links" data-visible={`${visible}`} onClick={visibleToggle}>
-          <a href="/virtue-sod/#about-contain">about us</a>
-          <a href="/virtue-sod/#services-contain">services</a>
+          <a href="/#about-contain">about us</a>
+          <a href="/#services-contain">services</a>
           <Link to="/types"> Types</Link>
           <Link to="/contact">Contact</Link>
         </ul>

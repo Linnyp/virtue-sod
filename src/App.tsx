@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/virtue-sod/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/types" element={<Types />} />
         </Routes>
