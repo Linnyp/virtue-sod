@@ -1,4 +1,3 @@
-import Services from "./services";
 import phone from "../assets/icons8-phone-30.png";
 import email from "../assets/icons8-email-50.png";
 import { Servicespage } from "@/components/component/servicespage";

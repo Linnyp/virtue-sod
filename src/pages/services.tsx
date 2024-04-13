@@ -1,7 +1,6 @@
 import img2 from "../assets/images/sodLoad.jpg";
 import before from "../assets/images/sodBeforeCloseup.jpg";
 import after from "../assets/images/sodAfter.jpg";
-import { Servicespage } from "@/components/component/servicespage";
 
 export default function Services() {
   return (

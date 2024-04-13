@@ -1,10 +1,8 @@
 import "./App.css";
 import Home from "./pages/home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Services from "./pages/services";
-import Estimates from "./pages/estimates";
+import Contact from "./pages/contact";
 import Types from "./pages/types";
-import Maintenance from "./pages/maintenance";
 import Navbar from "./components/navbar";
 function App() {
   return (
@@ -13,10 +11,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/virtue-sod/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/estimates" element={<Estimates />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/types" element={<Types />} />
-          {/* <Route path="/maintenance" element={<Maintenance />} /> */}
         </Routes>
       </Router>
     </div>

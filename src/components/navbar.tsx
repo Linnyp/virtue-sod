@@ -44,10 +44,8 @@ export default function Navbar() {
         <ul id="nav-links" data-visible={`${visible}`} onClick={visibleToggle}>
           <a href="/virtue-sod/#about-contain">about us</a>
           <a href="/virtue-sod/#services-contain">services</a>
-          {/* <Link to="/#services-contain">Services</Link> */}
           <Link to="/types"> Types</Link>
-          {/* <Link to="/maintenance"> Maintenance & Care</Link> */}
-          <Link to="/estimates">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </ul>
         <img src={mainLogo} style={{ ...navbarStyles }} alt="" />
 
@@ -57,7 +55,6 @@ export default function Navbar() {
           onClick={visibleToggle}
         ></button>
       </div>
-      {/* <div className="wave-bottom"></div> */}
     </>
   );
 }
