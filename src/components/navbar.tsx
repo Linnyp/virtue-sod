@@ -13,7 +13,7 @@ export default function Navbar() {
   }, [location.pathname]);
 
   const navStyles = function () {
-    if (currentRoute !== "/virtue-sod/") {
+    if (currentRoute !== "/") {
       return {
         margin: "1rem",
         width: "120px",
