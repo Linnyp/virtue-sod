@@ -1,4 +1,4 @@
-import video from "../assets/virtueXsmall.mp4";
+import video from "../assets/virtueFinal.mp4";
 import { Aboutsection } from "@/components/component/aboutsection";
 import { Servicespage } from "@/components/component/servicespage";
 

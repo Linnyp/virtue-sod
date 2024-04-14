@@ -54,20 +54,25 @@ export function Contactform() {
               <Label className="text-amber" htmlFor="name">
                 Name
               </Label>
-              <Input name="name" placeholder="Enter your name" />
+              <Input name="name" placeholder="Enter your name" required />
             </div>
             <div className="space-y-2">
               <Label className="text-amber" htmlFor="email">
                 Email
               </Label>
-              <Input name="email" placeholder="Enter your email" type="email" />
+              <Input
+                name="email"
+                placeholder="Enter your email"
+                type="email"
+                required
+              />
             </div>
           </div>
           <div className="space-y-2">
             <Label className="text-amber" htmlFor="subject">
               Phone Number
             </Label>
-            <Input name="subject" placeholder="Enter your number" />
+            <Input name="subject" placeholder="Enter your number" required />
           </div>
           <div className="space-y-2">
             <Label className="text-amber" htmlFor="message">
