@@ -4,7 +4,6 @@
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 
-import { url } from "inspector";
 import bahia from "../../assets/bahia.jpg";
 import bermuda from "../../assets/bermuda.jpg";
 import citra from "../../assets/citrablue_staugustine.jpg";
