@@ -82,7 +82,8 @@ export function Productaccordion() {
           />
         </div>
         <div
-          className={`bg-bermuda p-4 grid gap-4 text-sm leading-loose ${
+          style={{ backgroundImage: `url(${bermuda})` }}
+          className={` p-4 grid gap-4 text-sm leading-loose ${
             expandedIndex === 1 ? "" : "hidden"
           }`}
         >
@@ -119,7 +120,8 @@ export function Productaccordion() {
           />
         </div>
         <div
-          className={`bg-citra p-4 grid gap-4 text-sm leading-loose ${
+          style={{ backgroundImage: `url(${citra})` }}
+          className={`p-4 grid gap-4 text-sm leading-loose ${
             expandedIndex === 2 ? "" : "hidden"
           }`}
         >
@@ -154,7 +156,8 @@ export function Productaccordion() {
           />
         </div>
         <div
-          className={`bg-floratam p-4 grid gap-4 text-sm leading-loose ${
+          style={{ backgroundImage: `url(${floratam})` }}
+          className={`p-4 grid gap-4 text-sm leading-loose ${
             expandedIndex === 3 ? "" : "hidden"
           }`}
         >
@@ -190,7 +193,8 @@ export function Productaccordion() {
           />
         </div>
         <div
-          className={`bg-zoysia p-4 grid gap-4 text-sm leading-loose ${
+          style={{ backgroundImage: `url(${zoysia})` }}
+          className={`p-4 grid gap-4 text-sm leading-loose ${
             expandedIndex === 4 ? "" : "hidden"
           }`}
         >
