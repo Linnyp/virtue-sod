@@ -2,10 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon-CJ86ksXM.png?"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEv0lEQVRYR8XXd6jVZRzH8SxbtrO/sk27lLJsDyvDsj0oIzNTI1tIe1JQNKkohZYNKmhvLUfDmw0iLS2ppGmptGhAg6LIPq94fnDuuefecw906YE3v3PO7/d7ns/znc/ptcz/PHrVrb9evt8YXggPht96Wl+9gA2y4Kzg+lY4LbzTkyLqBVhruzAl9As/hlPDo2FpTwhpJMA6+4Rnwl9h+XBOmNQTIjoTQMRZ4fIwORwWxpW4+E8N0ZWAFbLSc2W1N3M9IxwcXm9Bgfk3LBYdUKzaVvt+VwI8Jx5eCSeHg8IuYe/wdTdEbJFnLi3WWy3Xn8s8j7QigMDbw/Zlohm5zgljwt+diFg2v48O14Y+YeXwdhgb3g3tgrmZBayxZZCSx4Y/guAcHir31OpYLl8uCYL2oXBg+DAcH75vJLg7Auzo4bBSODzcGVhkz1BbqMx1eriqCDip7PaQXKVzw9EdAV4cGtQCCzPh7HB+uKdmVvExLVwUBN6IsFf4rLPF/U6AHU4IG4dbwouh3r+r5Df+8xyUa6J2CqzAzzPDp+HmMocCppw3Gpvkx3NDfwJwReA7hUeUuvlN3ZsWlhWDgwkEIzM/FUaF6wIrEEewlP2zbg4x4lkBuk6YX7lgxXwR7ScGO1oUTiiLVHNUbtg2PywO4sJCx4Q3wvPhsaCXHBpYpHaIoesD0Sz8SxhSGwMmM8Fm4ctgIdHLJUbfIKKZ9omgLoh0EW/igeHswEpKOWtWg4sEr008HWSUTJpaH4Qa0Ks1ix6Zz0eHtuDZl8L8MD7I8QVh1WDXo8J7gTvvqllcL5kYjgjE3xAeDxeEpY2yQKo9ENR/kUz1/uGDIMXsbo/AjLLAwsz6VRA/LLekCDC/nnJZ4Kp9g03tHP5NzUYCZMWTwQ69xC1rhCGF23LdKvwQWOe+ID1PKdf9cq2q3W75PDVcHJ4NzhbS994isKEA93YMbYGfFwZuUQeYVjry9/th3cANhFwZZIQIN8SUPuJ9/r4wsOgO4dfyTKcCWEEb1kCOCyzhPFDtWMVjpd5BUXo5qP/cZ1HjzMD0aoWUtnvWuqZa3LWrSnhUWXTrXNVxJmRaVe7+IO8NccDsq4fK/2vm87xyT1CKGa6w+4+6K4DfmZfPBKVJlFr5y9Qi2hBkN4XPw+ZB+ul8AtYZwO65RRvfPbSrsl1ZwD0BqDCNDMytHcsC7lFsjGHlu1R0j/teC0zuEOM9blGYnA/ajWbNiK/tUNQrq9KNyZ2Qqt24J/9VRtWTy7Rv6ev0tFZYGBQfFmxJgEWU2P5BdRT1ol/Oy4Tfw9pB6VbKVUW7Jpr5RfugoIBJVc2qJQEaBt9WtZ3FmFogbhNkiXohsO4IUpElPGfHhnKuVGtgDjQtCdCkPg46pUA0BBxT6xk/Bc84cikuWrE64bOuaAhidUBt6XCMaxYDAkinE/VV/jqgErFRkJ5arEIlTdUKJduZ0Z8bgyhitecOf26aCRDRIn9uOK9MeECuOtr64btQNSlCKwGOa9VfurvzmZsUtA6jmQD3pdwXQUYYuwZp5Y/st+U3IhUepZoFHGQ/KfecivheBrUswAt8ydRXl7c3zZV5nX7EgHFrEIja7PQwOLCOof1qXNX77UT8A6O8Ge6XGUp8AAAAAElFTkSuQmCC"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABjklEQVQ4T43TSSjEYRjHcUPiIClOLkou4oaDIkIuJHGRrbGnwUGWKFtJiGS9ypLlwI0DB5RyUOLkqjRlObg4yP79jWdqmhk1U5+e+b/L83/f9/m/jrC/XxRycIJvawspOHwSHNjkWuJTSLMZ5E2g8XE4xTOU5DGUJL4JNF7baEE06vDulySD53Zb4aD6/BOobdXOIpE4aQk0rgeNuEIbXv9LkEtHFtIwDLetKp0YDyc+vStT5mL0oxs3iMAmJlCDBYwjEr14gOapr0t/wrGMAoxgB7OYw7St4JqYgjEbr61VYNC3jJqo8h3jy94YQ9RhXmIFdxi1JNqOy/cQs2nQdpKhLRRiUW9BrCUqIuYhAdqW278K2zT2YQZvcOIQt9a+S+y0VbQSA8qoGmuwvodyZGIfR7iHSvuCH+wFS5BKYyU2cI4kTOEMZVC1BjAPlTdgBbpUOqwmXCAfLugQtbpqrKEBnkvnfwZ61oB6bKEZVdC9KLUk69av+UE/5SXaO6CDHEIJPqB7oC9TldFBen6/XKVTMfgZD8oAAAAASUVORK5CYII="
+    />
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Virtue Sod</title>
-    <script type="module" crossorigin src="./assets/index-rjlBQB2D.js"></script>
+    <script type="module" crossorigin src="./assets/index-HP2zGZ8V.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-HiwpYXiC.css">
   </head>
   <body>
