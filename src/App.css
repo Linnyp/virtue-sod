@@ -543,6 +543,7 @@ body {
   }
 
   #types-contain {
+    overflow: auto;
     margin-top: 4rem;
   }
 
