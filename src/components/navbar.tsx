@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import mainLogo from "../assets/images/virtueLogoLayersRed2.png";
+import mainLogo from "../assets/images/virtueLogoGreen.png";
 
 export default function Navbar() {
   const [visible, setVisible] = useState(false);
@@ -42,7 +42,9 @@ export default function Navbar() {
         }
       >
         <ul id="nav-links" data-visible={`${visible}`} onClick={visibleToggle}>
-          <a href="/#about-contain">about us</a>
+          <a className="text-accented" href="/#about-contain">
+            about us
+          </a>
           <a href="/#services-contain">services</a>
           <Link to="/types"> Types</Link>
           <Link to="/contact">Contact</Link>

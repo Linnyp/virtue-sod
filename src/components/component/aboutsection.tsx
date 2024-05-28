@@ -6,18 +6,17 @@
 export function Aboutsection() {
   return (
     <>
-      <section className="bg-seagreen w-full py-6 md:py-12 lg:py-16">
+      <section className="bg-second w-full py-6 md:py-12 lg:py-16">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col justify-center space-y-4 text-center">
             <div className="space-y-2 mx-auto max-w-[700px]">
-              <div className="inline-block rounded-lg p-0 bg-amber text-gunmetal px-3 py-1 text-sm dark:bg-gray-800">
+              <div className="inline-block rounded-lg p-0 bg-accented  px-3 py-1 text-sm ">
                 About Us
               </div>
-              <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl text-gunmetal">
-                Ecclesiastes 11:4 "Whoever watches the wind will not plant;
-                whoever looks at the clouds will not reap."
+              <h2 className="text-[#61892F] text-4xl font-bold tracking-tighter sm:text-5xl ">
+                The one stop shop for all your lawn projects!
               </h2>
-              <p className="text-gunmetal md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className=" md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-white">
                 Welcome to Virtue Sod, your premier destination for top-notch
                 sod services in Southwest Florida. We proudly serve cities such
                 as Lehigh Acres, Cape Coral, Fort Myers, North Port, Estero,
@@ -27,19 +26,19 @@ export function Aboutsection() {
             </div>
             <div className="flex flex-col items-left justify-center gap-6 mx-auto max-w-sm text-center">
               <div className="flex  items-center gap-2">
-                <div className="rounded-full p-3 bg-amber dark:bg-gray-800">
+                <div className="rounded-full p-3 bg-accented dark:bg-gray-800">
                   <PhoneIcon className="w-6 h-6" />
                 </div>
-                <p className="text-sm text-amber font-medium">
+                <p className="text-sm text-accented font-medium">
                   {" "}
                   (863) 843-5932
                 </p>
               </div>
               <div className="flex items-center gap-2">
-                <div className="rounded-full p-3 bg-amber dark:bg-gray-800">
+                <div className="rounded-full p-3 bg-accented dark:bg-gray-800">
                   <MailIcon className="w-6 h-6" />
                 </div>
-                <p className="text-sm text-amber font-medium">
+                <p className="text-sm text-accented font-medium">
                   Virtuesod@gmail.com
                 </p>
               </div>
@@ -47,33 +46,33 @@ export function Aboutsection() {
           </div>
         </div>
       </section>
-      <div className=" bg-seagreen border-gray-200 dark:border-gray-800">
+      <div className="  border-gray-200 dark:border-gray-800">
         <div className="container px-4 md:px-6">
-          <div className="grid items-center gap-6 py-6 md:py-12 lg:py-16">
+          <div className="grid items-center gap-6 py-16">
             <div className="space-y-4">
-              <h3 className="font-bold tracking-tight text-amber">
+              <h3 className="font-bold tracking-tight text-accented">
                 Quick Turnaround
               </h3>
-              <p className="text-gray-500/relaxed dark:text-gray-400">
+              <p className="text-white">
                 We understand the importance of efficiency. That's why we always
                 strive to deliver prompt results without compromising quality.
               </p>
             </div>
             <div className="space-y-4">
-              <h3 className="font-bold tracking-tight text-amber">
+              <h3 className="font-bold tracking-tight text-accented">
                 Professionalism at All Times
               </h3>
-              <p className="text-gray-500/relaxed dark:text-gray-400">
+              <p className="text-white">
                 Our team upholds the highest standards of professionalism in
                 every interaction. You can trust us to handle your requests with
                 care and expertise.
               </p>
             </div>
             <div className="space-y-4">
-              <h3 className="font-bold tracking-tight text-amber">
+              <h3 className="font-bold tracking-tight text-accented">
                 Licensed and Insured
               </h3>
-              <p className="text-gray-500/relaxed dark:text-gray-400">
+              <p className="text-white">
                 Your peace of mind is our priority. We are fully licensed and
                 insured, giving you confidence in the quality of our work and
                 the protection of your assets.

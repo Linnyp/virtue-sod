@@ -6,7 +6,7 @@ import Types from "./pages/types";
 import Navbar from "./components/navbar";
 function App() {
   return (
-    <div className="App bg-emerald-700">
+    <div className="App bg-prime">
       <Router>
         <Navbar />
         <Routes>

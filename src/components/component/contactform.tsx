@@ -40,27 +40,33 @@ export function Contactform() {
     <div className="container grid gap-12 px-4 pt-20 md:pt-16 md:grid-cols-2">
       <form onSubmit={sendMessage} className="space-y-4">
         <div className="space-y-2">
-          <h1 className="text-amber text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl/none">
+          <h1 className="text-accented text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl/none">
             Contact us
           </h1>
 
-          <p className="text-gunmetal dark:text-gray-400">
+          <p className="text-accentDark dark:text-gray-400">
             Feel free to reach out for any questions and estimates on pricing.
           </p>
         </div>
         <div className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2 ">
-              <Label className="text-amber" htmlFor="name">
+              <Label className="text-accented" htmlFor="name">
                 Name
               </Label>
-              <Input name="name" placeholder="Enter your name" required />
+              <Input
+                className="text-accented"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
             </div>
             <div className="space-y-2">
-              <Label className="text-amber" htmlFor="email">
+              <Label className="text-accented" htmlFor="email">
                 Email
               </Label>
               <Input
+                className="text-accented"
                 name="email"
                 placeholder="Enter your email"
                 type="email"
@@ -69,17 +75,22 @@ export function Contactform() {
             </div>
           </div>
           <div className="space-y-2">
-            <Label className="text-amber" htmlFor="subject">
+            <Label className="text-accented" htmlFor="subject">
               Phone Number
             </Label>
-            <Input name="subject" placeholder="Enter your number" required />
+            <Input
+              className="text-accented"
+              name="subject"
+              placeholder="Enter your number"
+              required
+            />
           </div>
           <div className="space-y-2">
-            <Label className="text-amber" htmlFor="message">
+            <Label className="text-accented" htmlFor="message">
               Message
             </Label>
             <Textarea
-              className="min-h-[100px]"
+              className="min-h-[100px] text-accented"
               name="message"
               placeholder="Enter your message..."
             />
@@ -90,19 +101,19 @@ export function Contactform() {
             </Button>
             <div className="flex flex-col lg:flex-row items-start  gap-2  max-w-sm text-center right-3 top-24 md:top-44">
               <div className="flex  items-center gap-2">
-                <div className="rounded-full p-3 bg-amber dark:bg-gray-800">
+                <div className="rounded-full p-3 bg-accented dark:bg-gray-800">
                   <PhoneIcon className="w-4 h-4" />
                 </div>
-                <p className="text-sm text-amber font-medium">
+                <p className="text-sm text-accented font-medium">
                   {" "}
                   (863) 843-5932
                 </p>
               </div>
               <div className="flex items-center gap-2">
-                <div className="rounded-full p-3 bg-amber dark:bg-gray-800">
+                <div className="rounded-full p-3 bg-accented dark:bg-gray-800">
                   <MailIcon className="w-4 h-4" />
                 </div>
-                <p className="text-sm text-amber font-medium">
+                <p className="text-sm text-accented font-medium">
                   Virtuesod@gmail.com
                 </p>
               </div>

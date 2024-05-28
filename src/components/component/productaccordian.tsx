@@ -22,7 +22,7 @@ export function Productaccordion() {
   return (
     <div className="mb-12 max-w-[1200px] w-10/12 mx-auto overflow-hidden rounded-lg shadow-lg dark:divide-gray-800">
       {" "}
-      <div className="grid divide-y my-1 bg-emerald-700 dark:bg-gray-950 divide-gray-200">
+      <div className="grid divide-y my-1 bg-prime dark:bg-gray-950 divide-gray-200">
         <div
           className="flex items-center justify-between gap-4 p-4 cursor-pointer"
           onClick={() => toggleDescription(0)}
@@ -35,10 +35,10 @@ export function Productaccordion() {
               src={bahia}
               width={100}
             />
-            <div className="font-semibold text-amber">Bahia</div>
+            <div className="font-semibold text-accented">Bahia</div>
           </div>
           <ChevronDownIcon
-            className={`w-4 h-4 fill-muted transition-transform ${
+            className={` text-accented w-4 h-4 fill-muted transition-transform ${
               expandedIndex === 0 ? "rotate-[-45deg] translate-y-0.5" : ""
             }`}
           />
@@ -60,7 +60,7 @@ export function Productaccordion() {
         </div>
       </div>
       {/* Repeat the structure for each product */}
-      <div className="grid divide-y bg-emerald-700 my-1 dark:bg-gray-950 divide-gray-200">
+      <div className="grid divide-y bg-prime my-1 dark:bg-gray-950 divide-gray-200">
         <div
           className="flex items-center justify-between gap-4 p-4 cursor-pointer"
           onClick={() => toggleDescription(1)}
@@ -73,10 +73,10 @@ export function Productaccordion() {
               src={bermuda}
               width={100}
             />
-            <div className="font-semibold text-amber">Bermuda</div>
+            <div className="font-semibold text-accented">Bermuda</div>
           </div>
           <ChevronDownIcon
-            className={`w-4 h-4 fill-muted transition-transform ${
+            className={`text-accented w-4 h-4 fill-muted transition-transform ${
               expandedIndex === 1 ? "rotate-[-45deg] translate-y-0.5" : ""
             }`}
           />
@@ -98,7 +98,7 @@ export function Productaccordion() {
         </div>
       </div>
       {/* Repeat the structure for each product */}
-      <div className="grid divide-y my-1 bg-emerald-700 dark:bg-gray-950 divide-gray-200">
+      <div className="grid divide-y my-1 bg-prime dark:bg-gray-950 divide-gray-200">
         <div
           className="flex items-center justify-between gap-4 p-4 cursor-pointer"
           onClick={() => toggleDescription(2)}
@@ -111,10 +111,10 @@ export function Productaccordion() {
               src={citra}
               width={100}
             />
-            <div className="font-semibold text-amber">Citra</div>
+            <div className="font-semibold text-accented">Citra</div>
           </div>
           <ChevronDownIcon
-            className={`w-4 h-4 fill-muted transition-transform ${
+            className={`text-accented w-4 h-4 fill-muted transition-transform ${
               expandedIndex === 2 ? "rotate-[-45deg] translate-y-0.5" : ""
             }`}
           />
@@ -134,7 +134,7 @@ export function Productaccordion() {
           </p>
         </div>
       </div>
-      <div className="grid divide-y my-1 bg-emerald-700 dark:bg-gray-950 divide-gray-200">
+      <div className="grid divide-y my-1 bg-prime dark:bg-gray-950 divide-gray-200">
         <div
           className="flex items-center justify-between gap-4 p-4 cursor-pointer"
           onClick={() => toggleDescription(3)}
@@ -147,10 +147,10 @@ export function Productaccordion() {
               src={floratam}
               width={100}
             />
-            <div className="font-semibold text-amber">Floratam</div>
+            <div className="font-semibold text-accented">Floratam</div>
           </div>
           <ChevronDownIcon
-            className={`w-4 h-4 fill-muted transition-transform ${
+            className={`text-accented w-4 h-4 fill-muted transition-transform ${
               expandedIndex === 3 ? "rotate-[-45deg] translate-y-0.5" : ""
             }`}
           />
@@ -171,7 +171,7 @@ export function Productaccordion() {
           </p>
         </div>
       </div>
-      <div className="grid divide-y  bg-emerald-700 dark:bg-gray-950 divide-gray-200">
+      <div className="grid divide-y  bg-prime dark:bg-gray-950 divide-gray-200">
         <div
           className="flex items-center justify-between gap-4 p-4 cursor-pointer"
           onClick={() => toggleDescription(4)}
@@ -184,10 +184,10 @@ export function Productaccordion() {
               src={zoysia}
               width={100}
             />
-            <div className="font-semibold text-amber">Zoysia</div>
+            <div className="font-semibold text-accented">Zoysia</div>
           </div>
           <ChevronDownIcon
-            className={`w-4 h-4 fill-muted transition-transform ${
+            className={`text-accented w-4 h-4 fill-muted transition-transform ${
               expandedIndex === 4 ? "rotate-[-45deg] translate-y-0.5" : ""
             }`}
           />

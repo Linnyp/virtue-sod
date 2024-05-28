@@ -8,13 +8,16 @@ import after from "../../assets/images/sodAfter.jpg";
 
 export function Servicespage() {
   return (
-    <section id="services-contain" className="w-full py-12 md:py-24 lg:py-32">
+    <section
+      id="services-contain"
+      className="bg-second w-full py-12 md:py-24 lg:py-32 text-white"
+    >
       <div className="container grid items-center justify-center gap-4 px-4 text-center md:gap-10 md:px-6">
         <div className="space-y-3">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-amber">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-accented">
             Our Services
           </h2>
-          <p className="mx-auto max-w-[600px] text-gunmetal md:text-xl/relaxed xl:text-base/relaxed dark:text-gray-400">
+          <p className="mx-auto max-w-[600px]  md:text-xl/relaxed xl:text-base/relaxed ">
             We provide a range of services to meet your needs.
           </p>
         </div>
@@ -28,10 +31,10 @@ export function Servicespage() {
               width="200"
             />
             <div className="space-y-2 text-center">
-              <h3 className="text-xl font-bold tracking-tight text-amber">
+              <h3 className="text-xl font-bold tracking-tight text-accented">
                 Site Preparation
               </h3>
-              <p className="text-sm dark:text-gray-400">
+              <p className="text-sm ">
                 Our skilled team ensures that your land is expertly graded,
                 leveled, and free of any impediments such as rocks, trash, or
                 existing vegetation. We also take care of the removal of old
@@ -48,7 +51,7 @@ export function Servicespage() {
               width="200"
             />
             <div className="space-y-2 text-center">
-              <h3 className="text-xl font-bold tracking-tight text-amber">
+              <h3 className="text-xl font-bold tracking-tight text-accented">
                 Delivery
               </h3>
               <p className="text-sm ">
@@ -67,7 +70,7 @@ export function Servicespage() {
               width="200"
             />
             <div className="space-y-2 text-center">
-              <h3 className="text-xl font-bold tracking-tight text-amber">
+              <h3 className="text-xl font-bold tracking-tight text-accented">
                 Installation of Sod
               </h3>
               <p className="text-sm ">

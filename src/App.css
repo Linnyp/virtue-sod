@@ -11,7 +11,7 @@ body {
   margin: 0;
   height: 100%;
   font-family: "Poppins", sans-serif;
-  background: #32936f;
+  background: #474b4f;
 }
 
 .rounded-lg {
@@ -66,7 +66,7 @@ body {
 
 #video {
   width: 100%;
-  height: 100vh;
+  height: 82vh;
   object-fit: cover;
 }
 
@@ -464,14 +464,14 @@ body {
     /* ^ Positioning and size without wrapper ^ */
     background-color: transparent;
     border: none;
-    background-image: url("../src//assets//burgmenu.png");
+    background-image: url("../src//assets//burgmenu2.png");
     background-size: cover;
     display: block;
   }
 
   .burger[aria-expanded="true"] {
     position: fixed;
-    background-image: url("../src/assets/closemenu.png");
+    background-image: url("../src/assets/closemenu2.png");
   }
 
   .burger-wrap {
@@ -502,13 +502,13 @@ body {
     opacity: 0;
     margin: 0;
     flex-direction: column;
-    -webkit-backdrop-filter: blur(1rem);
-    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(0.5rem);
+    backdrop-filter: blur(0.5rem);
     transition: transform 350ms ease-in-out;
     transform: translateX(100%);
     position: fixed;
     inset: 0 0 0 0%;
-    background-color: #318d2e1f;
+    background-color: #222629f0;
   }
 
   #nav-links[data-visible="true"] {
@@ -516,11 +516,12 @@ body {
     justify-content: space-evenly;
     padding: 0;
     width: 100%;
-    transform: translateX(0%);
+    transform: translateX(20%);
     opacity: 1;
   }
 
   #nav-links a {
+    color: #86c232;
     font-size: 3rem;
     margin-left: 3rem;
   }

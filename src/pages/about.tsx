@@ -8,7 +8,7 @@ export default function About() {
       <div id="about-contain">
         <section>
           <h1 className="about-head">About Us</h1>
-          <p>
+          <p className="text-white">
             Welcome to Virtue Sod, your premier destination for top-notch sod
             services in Southwest Florida. We proudly serve cities such as
             Lehigh Acres, Cape Coral, Fort Myers, North Port, Estero, Bonita,
