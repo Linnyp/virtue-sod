@@ -12,6 +12,7 @@ body {
   height: 100%;
   font-family: "Poppins", sans-serif;
   background: #474b4f;
+  box-sizing: border-box;
 }
 
 .rounded-lg {
@@ -513,7 +514,7 @@ body {
 
   #nav-links[data-visible="true"] {
     align-items: start;
-    justify-content: space-evenly;
+    gap: 9%;
     padding: 0;
     width: 100%;
     transform: translateX(20%);
@@ -522,7 +523,7 @@ body {
 
   #nav-links a {
     color: #86c232;
-    font-size: 3rem;
+    font-size: 1.6rem;
     margin-left: 3rem;
   }
 
@@ -543,7 +544,6 @@ body {
   }
 
   #types-contain {
-    overflow: auto;
     margin-top: 4rem;
   }
 
