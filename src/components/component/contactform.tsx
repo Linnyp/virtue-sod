@@ -10,7 +10,13 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import Image from "../../assets/contact.png";
 
-export function Contactform() {
+interface contactImage {
+  src?: string;
+  alt?: string;
+  style?: object;
+}
+
+export function Contactform(props: contactImage) {
   const [result, setResult] = useState("Submit");
 
   const sendMessage = async (event: any) => {
@@ -37,7 +43,11 @@ export function Contactform() {
   };
 
   return (
-    <div className="container grid gap-12 px-4 pt-20 md:pt-16 md:grid-cols-2">
+    <div
+      className={`container grid gap-12 px-4 pt-20 md:pt-16 ${
+        props.src ? "md:grid-cols-2" : undefined
+      }`}
+    >
       <form onSubmit={sendMessage} className="space-y-4">
         <div className="space-y-2">
           <h1 className="text-accented text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl/none">
@@ -121,17 +131,18 @@ export function Contactform() {
           </div>
         </div>
       </form>
+
       <div className="hidden items-center md:flex">
         <img
-          alt="Contact us"
-          className=" object-cover"
-          height="400"
-          src={Image}
+          alt={props.alt}
+          src={props.src}
+          className="object-cover"
+          height={props.src ? "400" : undefined}
           style={{
             aspectRatio: "700/400",
             objectFit: "contain",
           }}
-          width="600"
+          width={props.src ? "600" : undefined}
         />
       </div>
     </div>

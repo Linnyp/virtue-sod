@@ -1,5 +1,6 @@
 import video from "../assets/virtueFinal.mp4";
 import { Aboutsection } from "@/components/component/aboutsection";
+import { Contactform } from "@/components/component/contactform";
 import { Servicespage } from "@/components/component/servicespage";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       </div>
       <Aboutsection />
       <Servicespage />
+      <Contactform />
     </main>
   );
 }
