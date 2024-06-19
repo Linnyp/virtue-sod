@@ -2,7 +2,7 @@ import { Productaccordion } from "@/components/component/productaccordian";
 
 function Types() {
   return (
-    <div id="types-contain" className="bg-second">
+    <div id="types-contain" className="bg-second h-screen">
       <h1 className=" text-accented text-4xl text-center pb-0 mt-8">
         Sod Options
       </h1>

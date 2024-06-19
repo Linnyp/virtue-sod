@@ -43,7 +43,7 @@ export function Contactform(props: contactImage) {
 
   return (
     <div
-      className={`container grid gap-12 px-4 pt-20 md:pt-16 ${
+      className={`container grid gap-12 px-4 pt-20 md:pt-16 pb-4 ${
         props.src ? "md:grid-cols-2" : undefined
       }`}
     >
