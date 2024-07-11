@@ -1,16 +1,9 @@
-import { Link, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import mainLogo from "../assets/images/squareLogo3.3.png";
 
 export default function Navbar() {
   const [visible, setVisible] = useState(false);
-  const location = useLocation();
-  const [currentRoute, setCurrentRoute] = useState(location.pathname);
-
-  useEffect(() => {
-    // Update the currentRoute state whenever the location changes
-    setCurrentRoute(location.pathname);
-  }, [location.pathname]);
 
   const visibleToggle = function () {
     visible ? setVisible(false) : setVisible(true);
