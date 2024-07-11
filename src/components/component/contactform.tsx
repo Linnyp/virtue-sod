@@ -43,13 +43,13 @@ export function Contactform(props: contactImage) {
 
   return (
     <div
-      className={`container grid gap-12 px-4 pt-20 md:pt-16 pb-4 ${
+      className={` pt-6 bg-second grid gap-12 px-4 pb-4 ${
         props.src ? "md:grid-cols-2" : undefined
       }`}
     >
       <form onSubmit={sendMessage} className="space-y-4">
         <div className="space-y-2">
-          <h1 className="text-accented text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl/none">
+          <h1 className="text-accentDark text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl/none">
             Contact us
           </h1>
 
@@ -60,22 +60,22 @@ export function Contactform(props: contactImage) {
         <div className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2 ">
-              <Label className="text-accented" htmlFor="name">
+              <Label className="text-black" htmlFor="name">
                 Name
               </Label>
               <Input
-                className="text-accented"
+                className="text-black"
                 name="name"
                 placeholder="Enter your name"
                 required
               />
             </div>
             <div className="space-y-2">
-              <Label className="text-accented" htmlFor="email">
+              <Label className="text-black" htmlFor="email">
                 Email
               </Label>
               <Input
-                className="text-accented"
+                className="text-black"
                 name="email"
                 placeholder="Enter your email"
                 type="email"
@@ -84,45 +84,45 @@ export function Contactform(props: contactImage) {
             </div>
           </div>
           <div className="space-y-2">
-            <Label className="text-accented" htmlFor="subject">
+            <Label className="text-black" htmlFor="subject">
               Phone Number
             </Label>
             <Input
-              className="text-accented"
+              className="text-black"
               name="subject"
               placeholder="Enter your number"
               required
             />
           </div>
           <div className="space-y-2">
-            <Label className="text-accented" htmlFor="message">
+            <Label className="text-black" htmlFor="message">
               Message
             </Label>
             <Textarea
-              className="min-h-[100px] text-accented"
+              className="min-h-[100px] text-black"
               name="message"
               placeholder="Enter your message..."
             />
           </div>
           <div className="flex flex-row justify-between">
-            <Button className="my-auto" type="submit">
+            <Button className="my-auto bg-salmon" type="submit">
               {result}
             </Button>
             <div className="flex flex-col lg:flex-row items-start  gap-2  max-w-sm text-center right-3 top-24 md:top-44">
               <div className="flex  items-center gap-2">
-                <div className="rounded-full p-3 bg-accented dark:bg-gray-800">
+                <div className="rounded-full p-3 bg-accentDark dark:bg-gray-800">
                   <PhoneIcon className="w-4 h-4" />
                 </div>
-                <p className="text-sm text-accented font-medium">
+                <p className="text-sm text-salmon font-medium">
                   {" "}
                   (863) 843-5932
                 </p>
               </div>
               <div className="flex items-center gap-2">
-                <div className="rounded-full p-3 bg-accented dark:bg-gray-800">
+                <div className="rounded-full p-3 bg-accentDark dark:bg-gray-800">
                   <MailIcon className="w-4 h-4" />
                 </div>
-                <p className="text-sm text-accented font-medium">
+                <p className="text-sm text-salmon font-medium">
                   Virtuesod@gmail.com
                 </p>
               </div>

@@ -17,20 +17,19 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
-
-import mainLogo from "../../assets/images/virtueLogoGreen.png";
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0"
+/>;
+import mainLogo from "../../assets/images/squareLogo3.3.png";
 
 export function Footer() {
   return (
-    <footer className="bg-accentDark text-white py-10 md:py-16 lg:py-20">
+    <footer className="bg-[#7BA192] text-white py-10 md:py-16 lg:py-20">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="flex items-center">
           <a href="#">
-            <img
-              src={mainLogo}
-              alt=""
-              className="h-32 w-32 mr-2 text-blue-500"
-            />
+            <img src={mainLogo} alt="" className=" w-40 mr-2 text-blue-500" />
             {/* <LogoIcon className="h-8 w-8 mr-2 text-blue-500" /> */}
           </a>
         </div>

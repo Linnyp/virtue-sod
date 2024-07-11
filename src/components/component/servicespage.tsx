@@ -14,10 +14,11 @@ export function Servicespage() {
     >
       <div className="container grid items-center justify-center gap-4 px-4 text-center md:gap-10 md:px-6">
         <div className="space-y-3">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-accented">
-            Our Services
+          <h2 className="text-4xl font-bold tracking-tighter sm:text-4xl md:text-6xl text-accented">
+            Services
           </h2>
-          <p className="mx-auto max-w-[600px]  md:text-xl/relaxed xl:text-base/relaxed ">
+
+          <p className="mx-auto max-w-[600px]  md:text-xl/relaxed xl:text-base/relaxed text-black pb-6">
             We provide a range of services to meet your needs.
           </p>
         </div>
@@ -25,7 +26,7 @@ export function Servicespage() {
           <div className="flex flex-col items-center justify-center space-y-2 md:space-y-4">
             <img
               alt="Service Image"
-              className="rounded-lg object-cover aspect-[4/3] overflow-hidden"
+              className="rounded-lg object-cover aspect-[4/3] overflow-hidden transition-[width] hover:w-3/4"
               height="120"
               src={before}
               width="200"
@@ -34,7 +35,7 @@ export function Servicespage() {
               <h3 className="text-xl font-bold tracking-tight text-accented">
                 Site Preparation
               </h3>
-              <p className="text-sm ">
+              <p className="text-sm text-black">
                 Our skilled team ensures that your land is expertly graded,
                 leveled, and free of any impediments such as rocks, trash, or
                 existing vegetation. We also take care of the removal of old
@@ -45,7 +46,7 @@ export function Servicespage() {
           <div className="flex flex-col items-center justify-center space-y-2 md:space-y-4">
             <img
               alt="Service Image"
-              className="rounded-lg object-cover aspect-[4/3] overflow-hidden"
+              className="rounded-lg object-cover aspect-[4/3] overflow-hidden transition-[width] hover:w-3/4"
               height="120"
               src={img2}
               width="200"
@@ -54,7 +55,7 @@ export function Servicespage() {
               <h3 className="text-xl font-bold tracking-tight text-accented">
                 Delivery
               </h3>
-              <p className="text-sm ">
+              <p className="text-sm  text-black">
                 Choose from our range of services tailored to your specific
                 needs. We offer the convenience of delivering and setting up
                 pallets of sod, each covering an impressive 400-500 sq. ft.
@@ -64,7 +65,7 @@ export function Servicespage() {
           <div className="flex flex-col items-center justify-center space-y-2 md:space-y-4">
             <img
               alt="Service Image"
-              className="rounded-lg object-cover aspect-[4/3] overflow-hidden"
+              className="rounded-lg object-cover aspect-[4/3] overflow-hidden transition-[width] hover:w-3/4 "
               height="120"
               src={after}
               width="200"
@@ -73,7 +74,7 @@ export function Servicespage() {
               <h3 className="text-xl font-bold tracking-tight text-accented">
                 Installation of Sod
               </h3>
-              <p className="text-sm ">
+              <p className="text-sm text-black">
                 At your request, our team can lay the sod in a precise pattern
                 or direction. We also provide the option to chop or trim
                 sections to seamlessly fit around any obstructions. foundation.

@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import mainLogo from "../assets/images/virtueLogoGreen.png";
+import mainLogo from "../assets/images/squareLogo3.3.png";
 
 export default function Navbar() {
   const [visible, setVisible] = useState(false);
@@ -12,44 +12,22 @@ export default function Navbar() {
     setCurrentRoute(location.pathname);
   }, [location.pathname]);
 
-  const navStyles = function () {
-    if (currentRoute !== "/") {
-      return {
-        margin: "1rem",
-        width: "120px",
-        left: "0",
-      };
-    }
-  };
-
-  const navbarStyles = navStyles();
-
   const visibleToggle = function () {
     visible ? setVisible(false) : setVisible(true);
   };
 
   return (
     <>
-      <div
-        id="navbar"
-        style={
-          currentRoute !== "/"
-            ? {
-                position: "static",
-                flexDirection: "row-reverse",
-              }
-            : {}
-        }
-      >
+      <div id="navbar" className="static flex-row">
+        <img src={mainLogo} alt="" />
         <ul id="nav-links" data-visible={`${visible}`} onClick={visibleToggle}>
           <a className="text-accented" href="/#about-contain">
-            about us
+            about
           </a>
           <a href="/#services-contain">services</a>
           <Link to="/types"> Types</Link>
           <Link to="/contact">Contact</Link>
         </ul>
-        <img src={mainLogo} style={{ ...navbarStyles }} alt="" />
 
         <button
           className="burger"

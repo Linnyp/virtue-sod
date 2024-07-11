@@ -6,17 +6,17 @@
 export function Aboutsection() {
   return (
     <>
-      <section className="bg-second w-full py-6 md:py-12 lg:py-16">
+      <section className="bg-second w-full py-6 md:py-12 lg:pb-20">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col justify-center space-y-4 text-center">
             <div className="space-y-2 mx-auto max-w-[700px]">
               <div className="inline-block rounded-lg p-0 bg-accented  px-3 py-1 text-sm ">
                 About Us
               </div>
-              <h2 className="text-[#61892F] text-4xl font-bold tracking-tighter sm:text-5xl ">
+              <h2 className="text-accented text-4xl font-bold tracking-tighter sm:text-5xl ">
                 The one stop shop for all your lawn projects!
               </h2>
-              <p className=" md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-white">
+              <p className="md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-black pt-8 pb-8 ">
                 Welcome to Virtue Sod, your premier destination for top-notch
                 sod services in Southwest Florida. We proudly serve cities such
                 as Lehigh Acres, Cape Coral, Fort Myers, North Port, Estero,
@@ -25,21 +25,21 @@ export function Aboutsection() {
               </p>
             </div>
             <div className="flex flex-col items-left justify-center gap-6 mx-auto max-w-sm text-center">
-              <div className="flex  items-center gap-2">
-                <div className="rounded-full p-3 bg-accented dark:bg-gray-800">
-                  <PhoneIcon className="w-6 h-6" />
-                </div>
-                <p className="text-sm text-accented font-medium">
-                  {" "}
-                  (863) 843-5932
+              <div className="flex items-center gap-2">
+                {/* <div className="rounded-full p-3 bg-accentDark dark:bg-gray-800">
+                  <MailIcon className="w-6 h-6" />
+                </div> */}
+                <p className="text-4xl text-salmon font-medium reenie ">
+                  Virtuesod@gmail.com
                 </p>
               </div>
-              <div className="flex items-center gap-2">
-                <div className="rounded-full p-3 bg-accented dark:bg-gray-800">
-                  <MailIcon className="w-6 h-6" />
-                </div>
-                <p className="text-sm text-accented font-medium">
-                  Virtuesod@gmail.com
+              <div className="flex  items-center gap-2">
+                {/* <div className="rounded-full p-3 bg-accentDark dark:bg-gray-800">
+                  <PhoneIcon className="w-6 h-6" />
+                </div> */}
+                <p className="pl-[11%] text-4xl text-salmon font-medium reenie">
+                  {" "}
+                  (863) 843-5932
                 </p>
               </div>
             </div>
@@ -49,21 +49,26 @@ export function Aboutsection() {
 
       <div className="  border-gray-200 dark:border-gray-800">
         <div className="container px-4 md:px-6">
-          <div className="grid items-center gap-6 py-16">
+          <div className="grid items-center gap-6 py-6 sm:py-20">
+            <h2 className="text-accented text-center text-4xl font-bold tracking-tighter sm:text-5xl pb-4 ">
+              Our Commitment
+            </h2>
             <div className="space-y-4">
               <h3 className="font-bold tracking-tight text-accented">
-                Quick Turnaround
+                <i className="material-symbols-outlined">star</i>Quick
+                Turnaround
               </h3>
-              <p className="text-white">
+              <p className="text-black">
                 We understand the importance of efficiency. That's why we always
                 strive to deliver prompt results without compromising quality.
               </p>
             </div>
             <div className="space-y-4">
               <h3 className="font-bold tracking-tight text-accented">
+                <i className="material-symbols-outlined">star</i>{" "}
                 Professionalism at All Times
               </h3>
-              <p className="text-white">
+              <p className="text-black">
                 Our team upholds the highest standards of professionalism in
                 every interaction. You can trust us to handle your requests with
                 care and expertise.
@@ -71,9 +76,10 @@ export function Aboutsection() {
             </div>
             <div className="space-y-4">
               <h3 className="font-bold tracking-tight text-accented">
-                Licensed and Insured
+                <i className="material-symbols-outlined">star</i> Licensed and
+                Insured
               </h3>
-              <p className="text-white">
+              <p className="text-black">
                 Your peace of mind is our priority. We are fully licensed and
                 insured, giving you confidence in the quality of our work and
                 the protection of your assets.
@@ -82,12 +88,6 @@ export function Aboutsection() {
           </div>
         </div>
       </div>
-      <iframe
-        className="outline-0 pt-12 "
-        src="https://09876bee7218413cb3a6e5613ac420af.elf.site"
-        width="100%"
-        height="700"
-      ></iframe>
     </>
   );
 }
